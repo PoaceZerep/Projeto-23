@@ -1,0 +1,37 @@
+class Veiculo {
+
+    static numeroveiculos = 0;
+    constructor(modelo, preco) {
+      this.modelo = modelo;
+      this.preco = preco;
+      Veiculo.numeroveiculos++;
+    }
+  
+    getModelo() {
+      return this.modelo;
+    }
+  
+    setModelo(novoModelo) {
+      this.modelo = novoModelo;
+    }
+  
+    getPreco() {
+        return this.preco;
+      }
+    
+    setPreco(novoPreco){
+        this.preco = novoPreco;
+    }
+
+    
+
+}
+  
+
+const carro1 = new Veiculo("Marea", 15000);
+const carro2 = new Veiculo("Pegout 207", 10000);
+const carro3 = new Veiculo("Tempra", 8000);
+
+
+console.log(`Número de carros: ${Veiculo.numeroveiculos}`); 
+console.log('Os carros são: ', carro1, carro2, carro3);
